@@ -1,0 +1,11 @@
+name: Print Environment var
+on: push
+jobs:
+  env-var:
+    runs-on: ubuntu-latest
+#    env: 
+#     APP_MODE: ${{vars.APP_MODE}}
+    steps:
+      - name: Use Env Var
+        run: |
+          echo "Env var is: ${{env.APP_MODE}}"
