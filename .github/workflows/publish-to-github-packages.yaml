@@ -30,7 +30,11 @@ jobs:
   publish:
     needs: build_and_package
     runs-on: ubuntu-latest
-  permissions:
-    contents: read
-    packages: write
-      
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: package
