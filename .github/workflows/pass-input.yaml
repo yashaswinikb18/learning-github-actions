@@ -8,7 +8,7 @@ on:
         default: 'Hello World'
 
 jobs:
-  job-name:
+  pass-input:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
