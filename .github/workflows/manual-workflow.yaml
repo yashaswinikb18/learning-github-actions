@@ -1,0 +1,13 @@
+name: Manual Event
+on: 
+  workflow_dispatch:
+jobs:
+  manual-task:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+      - name: Info
+        run: |
+         echo "This is a manual event"
+  
