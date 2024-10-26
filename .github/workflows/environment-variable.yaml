@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: Display Env Var
         run: |
-          echo $MY_var
+          echo $MY_VAR
