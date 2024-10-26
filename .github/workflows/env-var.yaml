@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: Use Env Var
         run: |
-          echo "Env var is: ${{env.APP_MODE}}"
+          echo "Env var is: ${{vars.APP_MODE}}"
