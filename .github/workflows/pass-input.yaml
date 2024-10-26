@@ -1,0 +1,18 @@
+name: Pass Input to Workflow
+on: 
+  workflow_dispatch:
+    inputs:
+      param1:
+        description: 'Description for param1'
+        required: true
+        default: 'Hello World'
+
+jobs:
+  job-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Info
+        run: |
+          echo "The output of workflow: ${{github.event.inputs.param1}}"
