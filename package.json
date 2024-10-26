@@ -1,5 +1,5 @@
 {
-  "name": "@solankiarpan/nodejs-hello-world",
+  "name": "@yashaswinikb18/nodejs-hello-world",
   "version": "1.0.0",
   "private": false,
   "description": "Hello World nodejs",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/solankiarpan/nodejs-hello-world.git"
+    "url": "git+https://github.com/yashaswinikb18/nodejs-hello-world.git"
   },
   "publishConfig": {
   "registry": "https://npm.pkg.github.com/@solankiarpan"
@@ -20,9 +20,9 @@
   "author": "Arpan Solanki",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/solankiarpan/nodejs-hello-world/issues"
+    "url": "https://github.com/yashaswinikb18/nodejs-hello-world/issues"
   },
-  "homepage": "https://github.com/solankiarpan/nodejs-hello-world#readme",
+  "homepage": "https://github.com/yashaswinikb18/nodejs-hello-world#readme",
   "dependencies": {
     "pg": "^7.12.1"
   },
