@@ -1,5 +1,8 @@
 name: Publish image to GHCR
-on: push
+on: 
+  push:
+    branches:
+    - main
 jobs:
   push-to-ghcr:
     runs-on: ubuntu-latest
@@ -18,5 +21,5 @@ jobs:
       - name: Build and push the image
         run: |
           docker build . --tag ghcr.io/${{github.repository_owner}}/hello:latest
-          docker push ghcr.io/${{github.repository_owner}}
+          docker push ghcr.io/${{github.repository_owner}}/hello:latest
       
