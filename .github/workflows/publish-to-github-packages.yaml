@@ -28,7 +28,7 @@ jobs:
           name: package
           path: "*.tgz" #Upload anything with tgz extension
   publish:
-    needs: build_and_package
+    needs: [build_and_package]
     runs-on: ubuntu-latest
     permissions:
       contents: read
