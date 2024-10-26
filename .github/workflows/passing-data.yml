@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download
-        uses: action/download-artifact@v4
+        uses: actions/download-artifact@v4
         with:
           name: data.txt
       
