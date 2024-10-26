@@ -1,0 +1,11 @@
+name: Scheduled Event
+on: 
+  schedule:
+  - cron: '*/5 * * * *' #Every 5 minutes
+
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+  - name: Info
+    run: |
+      echo 'This jon runs every 5 minutes'
