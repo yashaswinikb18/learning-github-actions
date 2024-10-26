@@ -15,6 +15,6 @@ jobs:
       - name: Use Action Variable as Environment Context
         run: |
           echo ${{env.MY_VAR}}
-        #  echo "Env Var is: $MY_VAR"
+          echo "Env Var is: $MY_VAR"
           
  
