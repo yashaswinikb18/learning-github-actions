@@ -1,0 +1,12 @@
+name: Issue Workflow
+on:
+  issues:
+    types: 
+    - opened
+jobs:
+  issues-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Info
+        run: |
+          echo "Info about the issue"
