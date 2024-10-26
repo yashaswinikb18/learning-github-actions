@@ -1,0 +1,9 @@
+name: Event to run on one or more event
+on: push
+jobs:
+  show-info:
+    runs-on: Ubuntu-latest
+    steps:
+    - name: Info
+      run: |
+        echo "This will run on all branch"
