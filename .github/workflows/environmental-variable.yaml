@@ -1,0 +1,11 @@
+name: Print Variable 
+on: push
+jobs:
+  env-var:
+    runs-on: ubuntu-latest
+    env:
+      MY_VAR: "Hello from Env Var"
+    steps:
+      - name: Display Env Var
+        run: |
+          echo $MY_var
