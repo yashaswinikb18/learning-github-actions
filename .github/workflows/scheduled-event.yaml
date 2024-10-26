@@ -1,7 +1,7 @@
 name: Scheduled Event
 on: 
   schedule:
-  - cron: '*/5 * * * *' #Every 5 minutes - Minimum in Github Actions
+    - cron: '*/5 * * * *' #Every 5 minutes - Minimum in Github Actions
 
 jobs:
   show-info:
