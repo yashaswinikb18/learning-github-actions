@@ -16,7 +16,7 @@ jobs:
           username: ${{github.actor}}
           password: ${{secrets.GITHUB_TOKEN}}
       - name: Build and push the image
-        runs: |
+        run: |
           docker build . --tag ghcr.io/${{github.repository_owner}}/hello:latest
           docker push ghcr.io/${{github.repository_owner}}
       
