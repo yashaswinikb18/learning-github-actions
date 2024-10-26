@@ -1,0 +1,23 @@
+name: Data Passing Workflow
+on: [push]
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate Data
+        run: |
+          echo "Some data generated" > data.txt
+      - name: Upload File
+        uses: actions/upload-artifact@v4
+        with:
+          path: data.txt
+          name: data.txt
+  download:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download
+        uses: action/download-artifact@v4
+        with:
+          name: data.txt
+      
