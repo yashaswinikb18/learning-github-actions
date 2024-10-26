@@ -1,4 +1,4 @@
-name: Print Variable 
+name: Print Env Variable 
 on: push
 jobs:
   env-var:
